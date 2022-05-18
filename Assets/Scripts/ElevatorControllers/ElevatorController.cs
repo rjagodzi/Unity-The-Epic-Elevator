@@ -23,7 +23,6 @@ public class ElevatorController : MonoBehaviour
             GetComponent<Animator>().SetTrigger("openDoor");
             isDoorUnlocked = true;
             PlayDoorSxf();
-            //isDoorUnlocked = false;
        }
     }
 

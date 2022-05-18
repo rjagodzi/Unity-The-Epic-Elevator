@@ -54,7 +54,6 @@ public class FloorPanelController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha0) && canSelectFloors && isOnTheSecondFloor)
         {
-            //GetComponentInParent<Animator>().SetTrigger("downFirstFloor");
             GetComponentInParent<Animator>().SetTrigger("downGroundFloor(2)");
             isOnTheGroundFloor = true;
             isOnTheFirstFloor = false;
@@ -77,7 +76,6 @@ public class FloorPanelController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha2) && canSelectFloors && isOnTheGroundFloor)
         {
-            //GetComponentInParent<Animator>().SetTrigger("upFirstFloor");
             GetComponentInParent<Animator>().SetTrigger("upSecondFloor");
             isOnTheGroundFloor = false;
             isOnTheFirstFloor = false;
